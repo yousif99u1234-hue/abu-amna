@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ألبان أبو آمنة — إدارة المحل</title>
+  <meta name="theme-color" content="#F5ECD7">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" href="assets/img/logo-64.png">
+  <link rel="apple-touch-icon" href="assets/img/logo.png">
+  <script src="js/brand-font.js"></script>
+  <script src="js/brand-logo.js"></script>
+  <script>
+    try { var t = JSON.parse(localStorage.getItem('abu-amna-theme') || '"auto"'); if (t !== 'auto') document.documentElement.dataset.theme = t; } catch (e) {}
+  </script>
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand">
+        <div class="brand-logo"><img src="assets/img/logo.png" alt="ألبان أبو آمنة"></div>
+        <div>
+          <div class="brand-name" id="brand-name">ألبان أبو آمنة</div>
+          <div class="brand-sub">#طعم_الصبح_العراقي</div>
+        </div>
+      </div>
+      <nav class="nav" id="nav"></nav>
+      <div class="side-foot" id="side-foot"></div>
+    </aside>
+    <div class="scrim" id="scrim"></div>
+
+    <main class="main">
+      <header class="topbar">
+        <button class="icon-btn only-mobile" id="menu-btn" title="القائمة"></button>
+        <div class="top-title">
+          <h1 id="page-title">الرئيسية</h1>
+          <div class="top-date" id="top-date"></div>
+        </div>
+        <div class="top-actions">
+          <button class="btn btn-primary btn-sm hide-sm" id="quick-sale"></button>
+          <button class="icon-btn has-badge" id="alerts-btn" title="التنبيهات"></button>
+          <button class="icon-btn" id="theme-btn" title="الوضع الليلي / النهاري"></button>
+        </div>
+      </header>
+      <section id="view" class="view"></section>
+    </main>
+  </div>
+
+  <div id="modal-root"></div>
+  <div id="toasts"></div>
+  <iframe id="print-frame" title="print" aria-hidden="true"></iframe>
+
+  <script src="js/store.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/pages-main.js"></script>
+  <script src="js/pages-stock.js"></script>
+  <script src="js/pages-people.js"></script>
+  <script src="js/pages-reports.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
